@@ -8,7 +8,7 @@ import Editable from "./Components/Editabled/Editable";
 
 function App() {
   const [boards, setBoards] = useState(
-    JSON.parse(localStorage.removeItem("prac-kanban")) || []
+    JSON.parse(localStorage.getItem("prac-kanban")) || []
   );
 
   const [targetCard, setTargetCard] = useState({
